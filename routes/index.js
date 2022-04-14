@@ -6,8 +6,10 @@ const router = express.Router();
 
 router.get('/test', async (req, res) => {
   try {
-    const result = await db.getDb().collection('test').find().toArray();
-    res.status(200).send({ message: 'connected', data: [...result] });
+    // const result = await db.getDb().collection('test').find().toArray();
+    res.status(200).send({ message: 'Connected', 
+    // data: [...result] 
+  });
   } catch (err) {
     throw err;
   }
@@ -15,8 +17,8 @@ router.get('/test', async (req, res) => {
 
 router.get("/", (req, res) => {
   try {
-    const result = { url: '/' };
-    res.status(200).json(result);
+    const result = { message: 'Hello' };
+    res.status(200).send(result);
   } catch (err) {
     throw err;
   }

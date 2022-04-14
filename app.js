@@ -11,6 +11,6 @@ const mongoDbDatabaseName = 'test';
 
 
 app.use(index)
-db.connectToMongoDB(mongoUri, mongoDbDatabaseName).then(() => {console.log(`\u2705 "${mongoUri}/${mongoDbDatabaseName}"`)})
+//db.connectToMongoDB(mongoUri, mongoDbDatabaseName).then(() => {console.log(`\u2705 "${mongoUri}/${mongoDbDatabaseName}"`)})
 
 module.exports = app;
