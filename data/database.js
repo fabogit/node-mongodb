@@ -2,14 +2,9 @@ const mongodb = require('mongodb');
 
 const MongoClient = mongodb.MongoClient;
 
-const host = '127.0.0.1';
-const port = '27017';
-const mongoUri = `mongodb://${host}:${port}`;
-const mongoDbDatabaseName = 'test';
-
 let database;
 
-async function mongoClientConnect() {
+async function mongoClientConnect(mongoUri, mongoDbDatabaseName) {
   try {
     // connect to the mongo server
     const client = await MongoClient.connect(mongoUri);
