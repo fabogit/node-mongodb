@@ -1,12 +1,11 @@
 const express = require('express');
 
+const db = require("./data/database");
+const index = require("./routes");
+
 const app = express();
 
-app.get('/', (req, res) => {
-  res.status(200).send('Hello there');
-});
+app.use(index)
+db.connectToMongoDB().then(() => {console.log('...')})
 
-const port = process.env.port || 3000;
-app.listen(port, () => {
-  console.log(`running on ${port}`);
-});
+module.exports = app;
