@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
-    "start": "nodemon start.js"
+    "dev": "nodemon start.js",
+	"start": "node start.js"
   },
   "repository": {
     "type": "git",
