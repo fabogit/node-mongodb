@@ -1,19 +1,39 @@
 # node-mongodb
 
--TODO jest
+install packages
 
--TODO db
+`npm install`
 
--TODO dotenv
+config eslint
+
+`npm init @eslint/config`
+
+run server locally
+
+`npm run dev`
+
+update env variables on heroku if needed
+
+-TODO mvc in progress
+
+-TODO jest FIX
+
+---
 
 -TODO crud
 
 -TODO async error handler
 
+-TODO docker
+
 -TODO f/end
 
--TODO mvc
+# DONE
 
--TODO eslint
+-TODO db DONE
 
--TODO docker
+-TODO dotenv DONE
+
+-TODO eslint DONE
+
+-TODO heroku DONE live at `https://fabo-heroku-app-test.herokuapp.com/`
