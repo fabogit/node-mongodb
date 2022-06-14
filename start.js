@@ -1,6 +1,6 @@
 const app = require('./app');
+const { node } = require('./config/config');
 
-const port = process.env.port || 3000;
-app.listen(port, () => {
-  console.log(`\u2705 NodeJS Running on port: ${port}`);
+app.listen(node.port, () => {
+	console.log(`\u2705 NodeJS Running on port: ${node.port}`);
 });
