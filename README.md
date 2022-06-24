@@ -36,4 +36,4 @@ update env variables on heroku if needed
 
 -TODO eslint DONE
 
--TODO heroku DONE live at `https://fabo-heroku-app-test.herokuapp.com/`
+-TODO heroku DONE live at https://fabo-heroku-atlas-test.herokuapp.com/
